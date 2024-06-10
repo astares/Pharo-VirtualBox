@@ -34,6 +34,12 @@ VBVirtualBoxPlatform class >> isActive [
 	^ self subclassResponsibility
 ]
 
+{ #category : 'accessing' }
+VBVirtualBoxPlatform class >> manager [
+
+	^ VBVirtualBoxManager active
+]
+
 { #category : 'accessing - defaults' }
 VBVirtualBoxPlatform class >> platformID [ 
 	"Return a string with the platform identifier (e.g. 'Win' or 'OSX')"

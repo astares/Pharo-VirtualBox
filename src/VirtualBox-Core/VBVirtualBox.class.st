@@ -22,6 +22,13 @@ VBVirtualBox class >> latestVersion [
 		  platform: VBVirtualBoxPlatform active
 ]
 
+{ #category : 'accessing' }
+VBVirtualBox class >> manager [
+	"Return the currently active manager"
+
+	^ VBVirtualBoxManager active
+]
+
 { #category : 'private - accessing' }
 VBVirtualBox class >> retrieveVersionFromWeb [
 	"Try to retrieve and parse the latest version and revision number from the website
