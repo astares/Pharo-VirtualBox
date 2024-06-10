@@ -36,3 +36,9 @@ VBVirtualBoxVM >> name: anObject [
 
 	name := anObject
 ]
+
+{ #category : 'printing' }
+VBVirtualBoxVM >> printOn: aStream [
+
+	aStream nextPutAll: self name asString
+]
